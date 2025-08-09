@@ -1,0 +1,13 @@
+{
+  "itemGroup.rpggunscaling": "Example Mod Tab",
+  "block.rpggunscaling.example_block": "Example Block",
+  "item.rpggunscaling.example_item": "Example Item",
+
+  "rpggunscaling.configuration.title": " RPG Gun Scaling Configs",
+  "rpggunscaling.configuration.section.rpggunscaling.common.toml": " RPG Gun Scaling Configs",
+  "rpggunscaling.configuration.section.rpggunscaling.common.toml.title": " RPG Gun Scaling Configs",
+  "rpggunscaling.configuration.items": "Item List",
+  "rpggunscaling.configuration.logDirtBlock": "Log Dirt Block",
+  "rpggunscaling.configuration.magicNumberIntroduction": "Magic Number Text",
+  "rpggunscaling.configuration.magicNumber": "Magic Number"
+}
