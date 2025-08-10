@@ -20,15 +20,15 @@ public abstract class HitScanMixin extends Item {
         super(properties);
     }
 
-    private double damageModifier = 1f;
+    private double attackDamage = 1f;
 
     @Inject(method = "hurtEntity", at = @At("HEAD"), locals = LocalCapture.CAPTURE_FAILEXCEPTION)
     public void onHurtEntity(LivingEntity player, EntityHitResult arg1, Entity arg2, ItemStack arg3, CallbackInfoReturnable<Float> cir) {
-        damageModifier = player.getAttributeValue(Attributes.ATTACK_DAMAGE);
+        attackDamage = player.getAttributeValue(Attributes.ATTACK_DAMAGE);
     }
 
     @ModifyVariable(method = "hurtEntity", at = @At(value = "LOAD"), argsOnly = false, name = "adjustedDamage", order = 1100)
     public double onHurtEntityModifyAdjustedDamage(double value) {
-        return value * damageModifier;
+        return value + attackDamage;
     }
 }

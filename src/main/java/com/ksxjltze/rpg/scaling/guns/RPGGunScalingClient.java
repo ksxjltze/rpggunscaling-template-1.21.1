@@ -25,7 +25,7 @@ public class RPGGunScalingClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        RPGGunScaling.LOGGER.info("HELLO FROM CLIENT SETUP");
+        RPGGunScaling.LOGGER.info("RPG GUN SCALING CLIENT SETUP");
         RPGGunScaling.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }
